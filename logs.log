@@ -251,3 +251,90 @@ INFO:aiogram.dispatcher:Polling stopped
 ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
 WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8581428117)
 INFO:aiogram.dispatcher:Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+INFO:root:Start polling
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+INFO:root:User 6304170891 started the bot
+INFO:root:User 6304170891 started the bot
+INFO:root:User 6304170891 started the bot
+INFO:root:User 6304170891 started the bot
+INFO:root:User 6304170891 started the bot
+INFO:root:User 6304170891 started the bot
+INFO:root:User 6304170891 started the bot
+INFO:root:User 6304170891 started the bot
+INFO:root:User 6304170891 started the bot
+INFO:aiogram.event:Update id=797096219 is handled. Duration 185 ms by bot id=8581428117
+INFO:aiogram.event:Update id=797096222 is handled. Duration 210 ms by bot id=8581428117
+INFO:aiogram.event:Update id=797096226 is handled. Duration 235 ms by bot id=8581428117
+INFO:aiogram.event:Update id=797096225 is handled. Duration 259 ms by bot id=8581428117
+INFO:aiogram.event:Update id=797096221 is handled. Duration 285 ms by bot id=8581428117
+INFO:aiogram.event:Update id=797096220 is handled. Duration 309 ms by bot id=8581428117
+INFO:aiogram.event:Update id=797096223 is handled. Duration 331 ms by bot id=8581428117
+INFO:aiogram.event:Update id=797096227 is handled. Duration 349 ms by bot id=8581428117
+INFO:aiogram.event:Update id=797096224 is handled. Duration 373 ms by bot id=8581428117
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8581428117)
+INFO:aiogram.dispatcher:Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+INFO:root:Start polling
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8581428117)
+INFO:aiogram.dispatcher:Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+INFO:root:Start polling
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+INFO:root:User 6304170891 started the bot
+INFO:aiogram.event:Update id=797096228 is handled. Duration 285 ms by bot id=8581428117
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8581428117)
+INFO:aiogram.dispatcher:Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+INFO:root:Start polling
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+INFO:root:User 6304170891 started the bot
+INFO:aiogram.event:Update id=797096229 is handled. Duration 237 ms by bot id=8581428117
+INFO:aiogram.dispatcher:Polling stopped
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8581428117)
+INFO:aiogram.dispatcher:Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-09 18:34:02,750 - root - INFO - Start polling
+2025-12-09 18:34:02,924 - aiogram.dispatcher - INFO - Start polling
+2025-12-09 18:34:03,127 - aiogram.dispatcher - INFO - Run polling for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-09 18:34:03,184 - root - INFO - User 6304170891 started the bot
+2025-12-09 18:34:03,382 - aiogram.event - INFO - Update id=797096230 is handled. Duration 198 ms by bot id=8581428117
+2025-12-09 18:34:06,543 - root - INFO - User 6304170891 started the bot
+2025-12-09 18:34:06,617 - aiogram.event - INFO - Update id=797096231 is handled. Duration 73 ms by bot id=8581428117
+2025-12-09 18:34:07,960 - root - INFO - User 6304170891 started the bot
+2025-12-09 18:34:08,153 - aiogram.event - INFO - Update id=797096232 is handled. Duration 192 ms by bot id=8581428117
+2025-12-09 18:34:11,349 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-09 18:34:11,350 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-09 18:34:11,350 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8581428117)
+2025-12-09 18:34:11,608 - aiogram.dispatcher - INFO - Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-10 12:30:37,231 - root - INFO - Start polling
+2025-12-10 12:30:37,454 - aiogram.dispatcher - INFO - Start polling
+2025-12-10 12:30:37,506 - aiogram.dispatcher - INFO - Run polling for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-10 12:30:51,531 - root - INFO - User 6304170891 started the bot
+2025-12-10 12:30:51,745 - aiogram.event - INFO - Update id=797096233 is handled. Duration 213 ms by bot id=8581428117
+2025-12-10 12:30:53,794 - root - INFO - User 6304170891 started the bot
+2025-12-10 12:30:53,871 - aiogram.event - INFO - Update id=797096234 is handled. Duration 76 ms by bot id=8581428117
+2025-12-10 12:30:54,903 - root - INFO - User 6304170891 started the bot
+2025-12-10 12:30:54,984 - aiogram.event - INFO - Update id=797096235 is handled. Duration 80 ms by bot id=8581428117
+2025-12-10 12:31:02,942 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2025-12-10 12:31:02,943 - aiogram.dispatcher - INFO - Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-10 12:31:02,944 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-10 12:31:03,195 - root - INFO - Polling stopped
+2025-12-10 12:31:03,195 - root - INFO - stop bot
+2025-12-10 12:31:17,821 - root - INFO - Start polling
+2025-12-10 12:31:18,008 - aiogram.dispatcher - INFO - Start polling
+2025-12-10 12:31:18,067 - aiogram.dispatcher - INFO - Run polling for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-10 12:31:19,438 - root - INFO - User 6304170891 started the bot
+2025-12-10 12:31:19,648 - aiogram.event - INFO - Update id=797096236 is handled. Duration 209 ms by bot id=8581428117
+2025-12-10 12:31:39,304 - aiogram.dispatcher - WARNING - Received SIGTERM signal
+2025-12-10 12:31:39,305 - aiogram.dispatcher - INFO - Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-10 12:31:39,305 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-10 12:31:39,556 - root - INFO - Polling stopped
+2025-12-10 12:31:39,557 - root - INFO - stop bot

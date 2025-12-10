@@ -1,4 +1,5 @@
 import logging
+import sys
 from aiogram import Router
 from aiogram.filters import CommandStart
 from aiogram.types import Message
@@ -6,7 +7,14 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.context import FSMContext
 from app.generate import ai_generate
 
-logging.basicConfig(level=logging.INFO, filename="logs.log", filemode="a")
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout), 
+        logging.FileHandler("logs.log")
+    ]
+)
 
 class Chat(StatesGroup):
     wait = State()

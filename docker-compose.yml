@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  telegram-bot:
+    build: .
+    container_name: telegram-bot
+    restart: always
+    working_dir: /usr/src/app
+    command: ["python", "run.py"]
+    environment:
+      TZ: Europe/Moscow
+    volumes:
+      - ./:/usr/src/app
