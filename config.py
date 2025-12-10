@@ -1,4 +1,4 @@
 import os
 
-TOKEN= "8581428117:AAG9WuNtqZHZtvjgyqQRQxiwTF0jwmZ5Cy4"
-AI_TOKEN= "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"
+TOKEN= os.environ("TOKEN")
+AI_TOKEN= os.environ("AI_TOKEN")
