@@ -1,0 +1,21 @@
+name: telegram-bot
+
+runtime:
+  language: python
+  version: "3.11"
+
+build:
+  commands:
+    - pip install -r requirements.txt
+
+run:
+  command: python bot.py
+  port: 8080
+
+resources:
+  cpu: 0.5
+  memory: 512
+
+env:
+  - TOKEN
+  - AI_TOKEN
