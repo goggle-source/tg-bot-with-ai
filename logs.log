@@ -338,3 +338,115 @@ INFO:aiogram.dispatcher:Polling stopped for bot @project_tg_bot_with_ai_bot id=8
 2025-12-10 12:31:39,305 - aiogram.dispatcher - INFO - Polling stopped
 2025-12-10 12:31:39,556 - root - INFO - Polling stopped
 2025-12-10 12:31:39,557 - root - INFO - stop bot
+2025-12-10 14:08:47,505 - root - INFO - Start polling
+2025-12-10 14:08:47,926 - aiogram.dispatcher - INFO - Start polling
+2025-12-10 14:08:47,985 - aiogram.dispatcher - INFO - Run polling for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-10 14:08:50,347 - root - INFO - User 6304170891 started the bot
+2025-12-10 14:08:50,545 - aiogram.event - INFO - Update id=797096241 is handled. Duration 197 ms by bot id=8581428117
+2025-12-10 14:09:02,313 - root - INFO - User 6304170891 is generating the response
+2025-12-10 14:09:03,056 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 401 Unauthorized"
+2025-12-10 14:09:03,057 - aiogram.event - INFO - Update id=797096242 is not handled. Duration 745 ms by bot id=8581428117
+2025-12-10 14:09:03,058 - aiogram.event - ERROR - Cause exception while process update id=797096242 by bot id=8581428117
+AuthenticationError: Error code: 401 - {'error': {'message': 'User not found.', 'code': 401}}
+Traceback (most recent call last):
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        observer=observer, update_type=update_type, event=telegram_event, **data
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\app\handlers.py", line 38, in generating
+    response = await ai_generate(message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\app\generate.py", line 10, in ai_generate
+    completion = await client.chat.completions.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\openai\resources\chat\completions\completions.py", line 2603, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<48 lines>...
+    )
+    ^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\openai\_base_client.py", line 1794, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\tg-bot-with-ai\env\Lib\site-packages\openai\_base_client.py", line 1594, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'User not found.', 'code': 401}}
+2025-12-10 14:09:40,308 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-10 14:09:40,310 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-10 14:09:40,310 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8581428117)
+2025-12-10 14:09:40,575 - aiogram.dispatcher - INFO - Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-10 14:09:40,576 - root - INFO - close and stop bot
+2025-12-10 14:09:43,933 - root - INFO - Start polling
+2025-12-10 14:09:44,295 - aiogram.dispatcher - INFO - Start polling
+2025-12-10 14:09:44,352 - aiogram.dispatcher - INFO - Run polling for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-10 14:09:44,734 - root - INFO - User 6304170891 started the bot
+2025-12-10 14:09:44,932 - aiogram.event - INFO - Update id=797096243 is handled. Duration 198 ms by bot id=8581428117
+2025-12-10 14:09:51,483 - root - INFO - User 6304170891 is generating the response
+2025-12-10 14:09:52,414 - httpx - INFO - HTTP Request: POST https://openrouter.ai/api/v1/chat/completions "HTTP/1.1 200 OK"
+2025-12-10 14:09:52,765 - root - INFO - User 6304170891 wait the response
+2025-12-10 14:09:52,848 - aiogram.event - INFO - Update id=797096245 is handled. Duration 83 ms by bot id=8581428117
+2025-12-10 14:10:00,536 - root - INFO - User 6304170891 got the response
+2025-12-10 14:10:00,536 - aiogram.event - INFO - Update id=797096244 is handled. Duration 9053 ms by bot id=8581428117
+2025-12-10 14:10:05,295 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-10 14:10:05,296 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-10 14:10:05,296 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8581428117)
+2025-12-10 14:10:05,554 - aiogram.dispatcher - INFO - Polling stopped for bot @project_tg_bot_with_ai_bot id=8581428117 - 'AI-bot'
+2025-12-10 14:10:05,555 - root - INFO - close and stop bot
